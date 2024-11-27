@@ -3,11 +3,13 @@
  */
 #include<SoftwareSerial.h>
 
+// Ricordati di entrare in modalità enable con il pulsantino
+
 //byte const RXpin=3;   //Questo pin va collegato al TX dell'HC-05
 //byte const TXpin=2;   //Questo pin va collegato all'RX dell'HC-05
 
-byte const RXpin=9;   //Questo pin va collegato al TX dell'HC-05
-byte const TXpin=8;   //Questo pin va collegato all'RX dell'HC-05
+byte const RXpin=12;   //Questo pin va collegato al TX dell'HC-05
+byte const TXpin=11;   //Questo pin va collegato all'RX dell'HC-05
 
 SoftwareSerial MyBT(RXpin, TXpin);
 

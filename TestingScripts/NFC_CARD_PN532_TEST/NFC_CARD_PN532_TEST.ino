@@ -2,8 +2,8 @@
 #include <Adafruit_PN532.h>
 
 // Define the I2C address of the PN532
-#define SDA_PIN  A4 // Change if necessary
-#define SCL_PIN  A5 // Change if necessary
+#define SDA_PIN  A0 // Change if necessary
+#define SCL_PIN  A1 // Change if necessary
 
 Adafruit_PN532 nfc(SDA_PIN, SCL_PIN);
 
