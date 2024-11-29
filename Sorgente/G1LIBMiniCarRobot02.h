@@ -32,6 +32,9 @@ class Motori_cc {
             pinMode(pwm_b, OUTPUT);
             pinMode(dir_a, OUTPUT);
             pinMode(dir_b, OUTPUT);
+
+            analogWrite(pwm_a, 0);  //set both motors 
+            analogWrite(pwm_b, 0);
         }
 
         // --- movimenti ---
@@ -39,35 +42,43 @@ class Motori_cc {
             digitalWrite(dir_a, LOW); 
             digitalWrite(dir_b, LOW);
 
-            analogWrite(pwm_a, 100);  
-            analogWrite(pwm_b, 100);
+            analogWrite(pwm_a, 80);  
+            analogWrite(pwm_b, 80);
         }
 
         void Avanti() {
             digitalWrite(dir_a, HIGH); 
             digitalWrite(dir_b, HIGH);  
   
-            analogWrite(pwm_a, 100);  
-            analogWrite(pwm_b, 100);
+            analogWrite(pwm_a, 80);  
+            analogWrite(pwm_b, 80);
         }
 
-        void Destra90() {
+        void Destra() {
             digitalWrite(dir_a, HIGH); 
             digitalWrite(dir_b, HIGH);  
   
             analogWrite(pwm_a, 0);  
-            analogWrite(pwm_b, 100);
+            analogWrite(pwm_b, 90);
         }
 
-        void Sinistra90() {
+        void Sinistra() {
             digitalWrite(dir_a, HIGH); 
             digitalWrite(dir_b, HIGH);  
   
   
-            analogWrite(pwm_a, 100);  
+            analogWrite(pwm_a, 90);  
             analogWrite(pwm_b, 0);
+        } 
 
-            delay(1000);
+        void GiroSuSeStesso() {
+            digitalWrite(dir_a, HIGH); 
+            digitalWrite(dir_b, LOW);
+
+            analogWrite(pwm_a, 100);  
+            analogWrite(pwm_b, 100);
+
+            delay(3000);
         }
 
         void Fermo () {
