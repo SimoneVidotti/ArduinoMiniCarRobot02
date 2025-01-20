@@ -2,8 +2,8 @@
 #include <Adafruit_PN532.h>
 
 // Define the I2C address of the PN532
-#define SDA_PIN  A0 // Change if necessary
-#define SCL_PIN  A1 // Change if necessary
+#define SDA_PIN  20 // Change if necessary, 20 -> mega
+#define SCL_PIN  21 // Change if necessary, 21 -> mega
 
 Adafruit_PN532 nfc(SDA_PIN, SCL_PIN);
 
@@ -36,6 +36,15 @@ void loop(void) {
     }
     Serial.println("");
 
+    byte saldo[4]; // Array per memorizzare il saldo
+    // Invia il comando per leggere il saldo (questo è un esempio)
+    // Assicurati di avere il comando corretto per la tua carta
+    if (nfc.ntag2xx_ReadPage(4, saldo)) {
+      // Supponiamo che il saldo sia memorizzato in un formato specifico
+      float saldoRimanente = (saldo[0] << 8) + saldo[1]; // Esempio di conversione
+      Serial.print("Saldo rimanente: ");
+      Serial.println(saldoRimanente);
+    }
     // Wait for the card to be removed
     delay(1000);
   } else {
