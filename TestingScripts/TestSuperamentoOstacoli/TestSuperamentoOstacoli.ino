@@ -9,9 +9,9 @@ int pin_b = 9;
 int pin_dir_b = 8;
 
 // HCSR04 
-const float SogliaHCSR04 = 4.30;
-int pin_Trig = 52;
-int pin_Echo = 53;
+const float SogliaHCSR04 = 7.50;
+int pin_Trig = 53;
+int pin_Echo = 52;
 int LetturaHCSR04 = 0;
 
 // IR sensors 
@@ -57,7 +57,7 @@ void loop() {
     Motori.Indietro();
     delay(100);
     Motori.Sinistra();
-    delay(350);
+    delay(100);
     LettureOstacolo();
   }
 
@@ -66,21 +66,21 @@ void loop() {
     Motori.Indietro();
     delay(100);
     Motori.Destra();
-    delay(350);
+    delay(100);
     LettureOstacolo();
   }
 
   // case 011
   if (LetturaIR_Sx == 0 && LetturaHCSR04 == 1 && LetturaIR_Dx == 1) {
     Motori.Sinistra();
-    delay(700);
+    delay(200);
     LettureOstacolo();
   }
 
   // case 110
   if (LetturaIR_Sx == 1 && LetturaHCSR04 == 1 && LetturaIR_Dx == 0) {
     Motori.Destra();
-    delay(700);
+    delay(200);
     LettureOstacolo();
   }
 
