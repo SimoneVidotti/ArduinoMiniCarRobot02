@@ -1,8 +1,8 @@
 # 5TELA-2425-GRP01-PRJ01
-## Description:
-## Dependencies:
+
 ## Clone repository:
-## Executing program:
+*$ '''git clone https://github.com/SimoneVidotti/ArduinoMiniCarRobot02.git'''
+
 ## Authors:
 * Grecu Lorenzo
 * Vidotti Simone
