@@ -1,3 +1,8 @@
+// VERSIONE NON AGGIORNATA !
+
+// Ex sorgente senza end.
+
+
 // Light follower, codice sorgente robottino, Vidotti Zhou Grecu G1 5TELA
 #include <G1LIBMiniCarRobot02.h> // Libreria classi per robottino Gruppo 1
 
