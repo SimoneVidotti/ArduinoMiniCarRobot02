@@ -1,0 +1,52 @@
+Per sviluppare il progetto di un robot che soddisfi i requisiti da te descritti, il lavoro può essere suddiviso in diverse fasi, ognuna con un focus specifico. Ecco una traccia generale:
+
+### 1. **Analisi del problema**
+   - Il robot deve essere autonomo e in grado di rilevare e spegnere fonti luminose connesse a TAG NFC. Deve anche evitare ostacoli, comunicare con un sistema remoto via Bluetooth e muoversi in un ambiente delimitato.
+   - Requisiti principali: 
+     - Dimensioni robotiche massime: 190 x 190 x 160 mm.
+     - Capacità di evitare ostacoli e seguire tracce (facoltativo).
+     - Sistema di controllo remoto basato su Arduino.
+
+### 2. **Studio di fattibilità**
+   - **Risorse**:
+     - **Hardware**: struttura del robot già disponibile, sensori di prossimità (a infrarossi o ultrasuoni per evitare ostacoli), sensore di luce per rilevare sorgenti luminose, lettore NFC per i TAG, moduli Bluetooth (per comunicazione con Arduino).
+     - **Software**: programmazione del comportamento del robot e interfaccia con il sistema di controllo su Arduino.
+     - **Tempi di esecuzione**: impostare scadenze e tappe di sviluppo.
+   
+### 3. **Movimentazione del robot**
+   - **Motori e Ruote**: Definisci il tipo di motori (passo-passo o DC) per gestire la rotazione e il movimento, assicurandoti che siano adeguati alle dimensioni e al peso del robot.
+   - **Evitamento ostacoli**: Sensori ad ultrasuoni o IR per rilevare distanze e garantire l'evitamento degli ostacoli. Potresti implementare una mappatura dell'ambiente tramite un algoritmo come il *wall-following*.
+   - **Strategia di movimento**: Pianifica movimenti a rotazione casuale per esplorare l'area e impostare una logica per seguire le tracce nere (se utilizzato un sensore di linea).
+   
+### 4. **Sensori di prossimità e ricerca delle fonti luminose**
+   - **Sensore di luce**: Usa un sensore di luminosità come un fototransistor o una LDR (resistenza dipendente dalla luce) per rilevare le sorgenti luminose.
+   - **Inseguimento di traccia nera** (opzionale): Puoi usare un sensore a infrarossi o fotodiodi per seguire la traccia nera che facilita l'avvicinamento alla fonte luminosa.
+   
+### 5. **Sistema di lettura TAG NFC**
+   - Colloca un lettore NFC sul robot per leggere i TAG alla base delle sorgenti luminose.
+   - **UID del TAG**: Ogni TAG avrà un codice identificativo unico. Una volta letto, il robot invierà l'UID al sistema di controllo tramite Bluetooth.
+
+### 6. **Comunicazione con il sistema di controllo remoto**
+   - **Modulo Bluetooth**: Utilizza un modulo HC-05 o HC-06 per la comunicazione bidirezionale con la scheda Arduino.
+   - **Arduino**: Programma Arduino per ricevere i dati dal robot, confrontarli con i codici delle sorgenti luminose e spegnere le luci se il codice è corretto.
+   - **Display LCD**: Utilizza un LCD a due righe per visualizzare i codici dei TAG ricevuti e l'esito del confronto.
+
+### 7. **Gestione degli ostacoli e delle sorgenti luminose**
+   - Il robot deve essere in grado di:
+     - **Identificare correttamente le fonti luminose** e avvicinarsi tramite l’inseguimento della traccia nera (se implementato).
+     - **Evitarli gli ostacoli** grazie ai sensori di prossimità.
+   
+### 8. **Codici di risposta del sistema di controllo**
+   - Il sistema di controllo su Arduino invierà tre tipi di codici al robot:
+     - **Luci parzialmente spente**: Il robot continua la ricerca.
+     - **Tutte le luci spente**: Il robot conclude l'attività e si arresta.
+     - **Codice non valido**: Il robot deve riprendere la ricerca di altre fonti.
+
+### 9. **Prova finale e collaudo**
+   - Il progetto deve essere concluso entro la data stabilita, con una prova finale per verificare che il robot:
+     - Identifichi correttamente tutte le fonti luminose.
+     - Legga i TAG NFC e invii correttamente i dati al sistema di controllo.
+     - Eviti gli ostacoli e si muova fluidamente nel campo di movimento.
+
+### 10. **Considerazioni finali**
+   - Durante la valutazione, verranno considerati: precisione nel rilevamento delle luci, capacità di evitare ostacoli, accuratezza nella lettura dei TAG e fluidità del movimento.

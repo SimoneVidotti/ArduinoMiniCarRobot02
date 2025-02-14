@@ -1,0 +1,34 @@
+RFId (Radio Frequency Identification)
+ Utilizzata per l'identificazione automatica di oggetti animali e persone;
+basato sulla lettura di informazioni nel Tag
+
+Componenti:
+-Tag o transponder
+-Reader o tranceiver
+-Antenna
+-Sistema elaborazione
+
+TAG (dipende dal tipo di alimentazione): -trasponder passivo: utilizzano l'onda a radio frequenza generato dal lettore sai come fonte di energia per alimentazione che per ricevere dati, 					  Basso costo tempi di vita più lunghi, distanza limitati
+					 -trasponder semi passivo: batteria incorporata, grande distanza di comunicazione, costosi, impossibile stabilire stato batteria
+					 -trasponder attivo: completamente autonomi, autoalimentati da batteria e possiedono un trasmettitore attivo  bordo, grande distanza di comunicazione, 					  costosi, impossibile stabilire stato batteria
+
+Distanza(tag) da pochi  centimetri a qualche metro
+Contenuto(tag): antenna, chip che svolge semplici elaborazioni, piccola memoria
+
+assemblaggio(tag): substrato, antenna, chip, overlay
+
+Formato: varie forme vedere su pdf
+
+Campi che utilizzano RFId:
+-Indusriale 
+-medico
+-automotivo
+
+PN532 --> basato su corrente
+Distanza : 5-6 cm
+reader che writer
+alimentazione : 3,3V a 5V
+
+SDA --> serial data
+SCL --> serial conector
+

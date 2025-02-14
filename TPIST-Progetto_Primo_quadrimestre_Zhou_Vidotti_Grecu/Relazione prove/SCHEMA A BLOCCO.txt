@@ -1,0 +1,48 @@
+Sensori e Rilevamento
+
+Sensore di Luce
+Fototransistor o LDR per rilevare sorgenti luminose.
+Uscita: Segnale analogico o digitale per indicare la presenza di luce.
+Sensori di Prossimità
+IR o Ultrasuoni per rilevare ostacoli.
+Uscita: Segnale di distanza per l'evitamento degli ostacoli.
+Sensore NFC
+Lettore per identificare i TAG NFC.
+Uscita: UID del TAG letto.
+Unità di Elaborazione Centrale (Microcontrollore)
+
+Arduino UNO
+Riceve input dai sensori.
+Esegue algoritmi per la navigazione autonoma e il rilevamento di luci.
+Controlla i motori e il modulo Bluetooth.
+Comunica con il sistema di controllo remoto.
+Algoritmi di Navigazione
+Evitamento ostacoli.
+Ricerca di sorgenti luminose.
+Lettura e validazione TAG NFC.
+Attuatori
+
+Motori DC con Driver di Controllo
+Movimento del robot.
+Input: Comandi di direzione e velocità dall’Arduino.
+Eventuale Servo
+Movimenti di precisione per allineamento al TAG NFC o direzione sensore luce.
+Comunicazione
+
+Modulo Bluetooth (HC-05/HC-06)
+Trasmissione UID al sistema remoto.
+Ricezione del comando per spegnere la sorgente luminosa.
+Display LCD (Facoltativo)
+Mostra informazioni sui TAG rilevati e l'esito del confronto.
+Sistema di Controllo Remoto
+
+Arduino UNO del Sistema di Controllo
+Riceve gli UID inviati dal robot.
+Confronta i codici con un elenco predefinito.
+Spegne la sorgente luminosa corrispondente.
+Modulo Bluetooth
+Comunica con il robot.
+Alimentazione
+
+Batteria Ricaricabile
+Alimenta il microcontrollore, i sensori, i motori e i moduli di comunicazione.

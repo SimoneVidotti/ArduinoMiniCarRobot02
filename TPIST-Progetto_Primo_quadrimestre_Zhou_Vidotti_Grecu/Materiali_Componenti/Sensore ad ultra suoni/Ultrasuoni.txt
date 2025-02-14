@@ -1,0 +1,17 @@
+Il sensore ad ultrasuoni (HC-SR04) è un dispositivo che serve a rilevare la presenza di oggetti/ostacoli nelle sue immediate vicinanze senza bisogno di contatto fisico, in particolare usa il principio del sonar.
+Il HC-SR04 è dotato di un trasmettitore e di un ricevitore.
+Il sensore emette impulsi sonori ultrasonici che, se riflessi da un oggetto/ostacolo, generano un burst ultrasonico (40KHz). In seguito, utilizzando il tempo impiegato dal burst per tornare, il dispositivo può determinare la presenza e la distanza di un oggetto entro il raggio di azione.
+
+
+
+
+LIMITI: 
+
+Distanza dell’oggetto superiore a quella massima ammessa dal sensore
+
+Angolo di incidenza del tono ultrasonico con l’oggetto troppo piccolo per permettere una sufficiente riflessione 
+
+Oggetto troppo piccolo
+
+Insufficiente riflessione del suono da parte delle superfici fonoassorbenti e irregolari
+

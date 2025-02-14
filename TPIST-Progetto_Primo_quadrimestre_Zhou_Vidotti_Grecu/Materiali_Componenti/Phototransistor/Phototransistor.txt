@@ -1,0 +1,9 @@
+Il BPX 43 è un fototransistor al silicio ad alta sensibilità, progettato per rilevare la luce visibile e il vicino infrarosso (400-1100 nm). È utilizzato in applicazioni come sensori ottici, interruttori fotoelettrici e sistemi a infrarossi. Ha un'alta corrente di collettore (fino a 50 mA) e può lavorare a tensioni fino a 70 V. Grazie al suo contenitore in plastica nera, filtra la luce visibile, migliorando la risposta nell'infrarosso. È caratterizzato da una risposta veloce e da un angolo di rilevamento ottimizzato per applicazioni precise.
+
+
+
+Il BPX 43 è un fototransistor al silicio NPN ad alta sensibilità progettato per rilevare la luce nell'intervallo spettrale del visibile e del vicino infrarosso, con una risposta spettrale che va da circa 400 nm a 1100 nm. Ciò lo rende ideale per applicazioni quali rilevatori ottici, interruttori fotoelettrici e sistemi di controllo a infrarossi. Il suo contenitore in plastica nera aiuta a filtrare la luce visibile e migliora la risposta agli infrarossi.
+
+Grazie all'elevata corrente di collettore (fino a 50 mA in condizioni di illuminazione ottimali) e alla tensione operativa fino a 70 V, il BPX 43 funziona in modo affidabile in una varietà di ambienti, come telecomando, sensore di prossimità e tachimetro. La sua struttura consente tempi di risposta rapidi, il che è fondamentale per le applicazioni che richiedono un rilevamento della luce rapido e accurato.
+
+L'angolo di rilevamento del BPX 43 lo rende adatto a specifiche direzioni della luce ed è particolarmente utile nei sistemi di misurazione e controllo, dove combina elevata sensibilità, velocità di risposta e facile integrazione nei circuiti elettronici.

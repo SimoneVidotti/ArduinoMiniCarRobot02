@@ -1,0 +1,11 @@
+Lo schema rappresenta le principali funzioni e i relativi componenti che il robot Arduino deve integrare per operare correttamente. Ogni funzionalità è associata a specifici sensori o moduli, con i dettagli dei collegamenti ai PIN di Arduino:
+
+Movimento del Robot: Due motori controllati da Arduino, ciascuno connesso a 3 PIN, permettono al robot di spostarsi e cambiare direzione.
+Evitamento Ostacoli: Un sensore a ultrasuoni (4 PIN) rileva la presenza di ostacoli e invia comandi per evitarli.
+Rilevamento Linea: Tre sensori a infrarossi (4 PIN totali) seguono il percorso tracciato da una linea, influenzando la velocità e direzione delle ruote.
+Rilevamento Luce: Un sensore a infrarossi (2 PIN) rileva l'intensità luminosa per eseguire azioni basate su condizioni ambientali.
+Rilevamento NFC: Un lettore NFC permette al robot di leggere tag e interagire con segnali specifici.
+Comunicazione: Un modulo Bluetooth consente la comunicazione remota tra il robot e altri dispositivi.
+Feedback Sistema: Il robot si arresta automaticamente quando rileva che tutte le luci sono spente.
+Indicazione Stato Visivo e Sonoro: Un LED e un buzzer, ciascuno connesso a 2 PIN, forniscono feedback visivi e sonori in base alle condizioni operative.
+Questa configurazione consente al robot di seguire percorsi definiti, evitare ostacoli, reagire a condizioni esterne, e fornire interazione con l'ambiente circostante in modo autonomo ed efficiente.

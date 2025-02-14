@@ -1,0 +1,7 @@
+Nel processo di sviluppo del sistema di rilevamento ostacoli, abbiamo effettuato diversi cambiamenti ai sensori utilizzati a causa dei problemi riscontrati durante le prove:
+
+Tre sensori a ultrasuoni → Sensore IR Sharp
+Questo cambiamento è stato necessario perché, utilizzando tre sensori a ultrasuoni, si verificava un'interferenza: un sensore riceveva il segnale emesso da un altro sensore, causando errori nel rilevamento degli ostacoli. Per questo motivo, abbiamo deciso di sostituirli con un sensore IR Sharp.
+
+Sensore IR Sharp → Sensore IR Sharp GP2Y0D805Z0F
+Successivamente, abbiamo sostituito il primo sensore IR Sharp con il modello Sharp GP2Y0D805Z0F. La scelta è stata motivata dal fatto che il sensore originale aveva un raggio di rilevamento troppo lungo rispetto alle nostre esigenze, mentre il modello GP2Y0D805Z0F, con il suo raggio di rilevamento minore, si adattava meglio alle specifiche del sistema.

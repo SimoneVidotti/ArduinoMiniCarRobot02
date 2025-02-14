@@ -1,0 +1,59 @@
+### **Analisi del Problema**
+
+Il progetto prevede la costruzione di un robot autonomo in grado di muoversi in un ambiente delimitato e svolgere una serie di compiti complessi. L’obiettivo principale del robot è quello di individuare e spegnere delle sorgenti luminose collegate a dispositivi **TAG NFC**, inviare i dati relativi al sistema di controllo tramite Bluetooth e terminare l'attività una volta completata l'operazione su tutte le luci presenti.
+
+### **Compiti principali del robot**
+1. **Rilevamento delle sorgenti luminose**: 
+   Il robot deve individuare luci poste in posizioni sconosciute e fisse all'interno del campo di movimento. La luce emessa è direzionale e la sorgente è montata a un’altezza definita dal piano di movimento (160 mm).
+
+2. **Lettura di TAG NFC**:
+   Ogni fonte luminosa ha associato un TAG NFC posizionato a 35 mm dal piano. Il robot deve avvicinarsi alla luce, leggere il codice univoco del TAG e inviarlo al sistema di controllo remoto.
+
+3. **Evita ostacoli**: 
+   Nel campo di movimento sono presenti ostacoli (di colore bianco) disposti in maniera fissa ma sconosciuta. Il robot deve essere in grado di rilevarli e aggirarli per continuare la sua esplorazione.
+
+4. **Comunicazione con il sistema di controllo remoto**:
+   Tramite un modulo Bluetooth, il robot deve trasmettere al sistema di controllo i codici dei TAG NFC rilevati. In base alla correttezza dei codici, il sistema provvede allo spegnimento delle fonti luminose.
+
+5. **Ricerca autonoma**:
+   Il robot deve agire in modo completamente autonomo, senza interventi esterni, gestendo tutte le operazioni (movimento, evitamento ostacoli, rilevamento luci, lettura dei TAG e comunicazione dei dati) in autonomia.
+
+### **Requisiti del robot**
+- **Movimento autonomo**: Il robot non può essere radiocomandato. Deve gestire in autonomia tutti gli aspetti della navigazione, dall'orientamento alla ricerca delle luci.
+- **Dimensioni**: Il robot deve rispettare le dimensioni massime di 190 x 190 x 160 mm (esclusi eventuali dispositivi di contatto).
+- **Ambiente di lavoro**: 
+  - Campo di movimento: 1,5 x 1,5 metri.
+  - Ostacoli di 200 x 200 x 260 mm.
+  - Larghezza minima dei corridoi: 300 mm.
+  - Presenza di tracce nere facoltative che facilitano il movimento verso le fonti luminose.
+
+### **Funzionalità facoltative**
+- **Inseguimento di traccia nera**: Se implementato, il robot può usare un sensore per seguire una traccia nera larga 25 mm che facilita il movimento verso le luci.
+
+### **Vincoli e risorse**
+1. **Spazio fisico limitato**: Il campo di movimento è relativamente piccolo, il che richiede movimenti precisi e una gestione ottimizzata dello spazio disponibile.
+2. **Numero sconosciuto di sorgenti luminose e TAG**: Il robot deve essere programmato per gestire una quantità indeterminata di obiettivi, continuando la ricerca fino a quando il sistema remoto non conferma la fine dell’attività.
+3. **Interferenze visive**: Gli ostacoli e i bordi del campo di movimento sono dello stesso colore (bianco), rendendo importante che i sensori siano in grado di distinguere correttamente questi elementi.
+4. **Interazione remota con Arduino**: Il sistema di controllo è basato su Arduino UNO, che riceve i dati inviati dal robot, verifica la correttezza dei TAG NFC e spegne le luci. Il robot deve inviare correttamente i codici e ricevere i feedback dallo stesso sistema per proseguire con l'attività.
+
+### **Sfide tecniche principali**
+- **Navigazione e gestione degli ostacoli**: 
+  Il robot deve essere in grado di evitare ostacoli in modo autonomo utilizzando sensori di prossimità (IR o a ultrasuoni) e deve essere abbastanza preciso da evitare urti e blocchi, soprattutto in un ambiente con corridoi stretti.
+  
+- **Rilevamento e lettura delle fonti luminose**: 
+  Deve rilevare le sorgenti luminose a distanza e avvicinarsi correttamente al TAG NFC per leggerne il codice. La lettura NFC richiede un posizionamento preciso del robot per garantire la corretta acquisizione dei dati.
+
+- **Comunicazione e controllo remoto**: 
+  La comunicazione Bluetooth tra il robot e Arduino è cruciale per il corretto spegnimento delle luci. Il sistema deve essere in grado di inviare e ricevere dati in modo affidabile per garantire che la luce corretta venga spenta.
+
+- **Fluidità del movimento**: 
+  Oltre alla semplice navigazione, il robot deve muoversi in modo fluido, senza interruzioni o movimenti casuali che potrebbero influire sull'efficacia della ricerca delle luci.
+
+### **Conclusioni**
+Per concludere con successo il progetto, il robot dovrà affrontare una serie di sfide tecniche:
+- Navigazione autonoma con evitamento degli ostacoli.
+- Rilevamento preciso delle sorgenti luminose e lettura dei TAG NFC.
+- Comunicazione efficace con il sistema remoto per spegnere correttamente le luci.
+- Capacità di esplorare l'intera area di movimento, garantendo che tutte le fonti luminose siano spente al termine dell'attività.
+
+L'accurata pianificazione della strategia di movimento, l'integrazione dei sensori e l'implementazione della logica di controllo saranno essenziali per il successo del progetto.

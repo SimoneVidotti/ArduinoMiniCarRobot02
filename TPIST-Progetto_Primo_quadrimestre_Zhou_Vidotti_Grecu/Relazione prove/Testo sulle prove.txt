@@ -1,0 +1,3 @@
+Durante il periodo di progettazione del robottino, abbiamo eseguito diverse prove ogni volta che veniva completata una specifica parte del suo funzionamento, al fine di testarne l’efficacia e individuare eventuali errori.
+Tra queste, abbiamo svolto test sulla comunicazione tra i due moduli Bluetooth, sul rilevamento e superamento degli ostacoli, nonché sulla funzionalità generale del robottino finale.
+

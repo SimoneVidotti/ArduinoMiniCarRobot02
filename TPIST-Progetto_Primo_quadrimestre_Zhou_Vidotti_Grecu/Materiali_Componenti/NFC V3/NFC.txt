@@ -1,0 +1,17 @@
+Il Modulo NFC v3 è un dispositivo hardware che consente la comunicazione tramite tecnologia NFC (Near Field Communication), un tipo di connessione wireless che funziona su brevi distanze, solitamente entro 4 cm. È ampiamente utilizzato per progetti elettronici che coinvolgono microcontrollori come Arduino, Raspberry Pi e altre piattaforme simili.
+
+Reader/Writer Mode: In questa modalità, il modulo può leggere e scrivere su tag NFC (per esempio, card NFC o tag passivi).
+
+Peer-to-Peer Mode: Consente la comunicazione diretta tra due dispositivi NFC, ad esempio tra un telefono NFC e il modulo stesso.
+
+Card Emulazioni Mode: Il modulo può simulare una smart card NFC, permettendo ad altri lettori di leggere i dati del modulo come se fosse un tag NFC.
+
+Vantaggi e limitazioni:
+Vantaggi:
+Facile da usare con piattaforme come Arduino e Raspberry Pi.
+Compatibile con una vasta gamma di protocolli NFC.
+Supporto per lettura, scrittura ed emulazione di tag NFC.
+Limitazioni:
+Portata limitata a pochi centimetri.
+Richiede la libreria e una configurazione corretta per l'interfaccia desiderata.
+Prestazioni variabili a seconda del tipo di tag utilizzato.

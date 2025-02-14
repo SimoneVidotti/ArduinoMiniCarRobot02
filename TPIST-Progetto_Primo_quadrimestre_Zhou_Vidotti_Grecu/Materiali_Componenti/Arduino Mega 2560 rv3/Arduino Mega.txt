@@ -1,0 +1,2 @@
+DESCRIZIONE:
+La Arduino Mega 2560 rev3 è una scheda basata sul microcontrollore ATmega2560, dotata di 54 pin di input/output digitali (14 di questi possono essere usati come segnali PWM), 16 input analogici. Fornisce tutto ciò che è necessario per supportare il funzionamento del microcontrollore, permettendo di controllare dispositivi elettronici, leggere sensori e utomatizzare processi tramite un codice programmato dall'utente.

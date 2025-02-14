@@ -1,0 +1,31 @@
+
+Il Sharp GP2Y0D805Z0F è un sensore IR (a infrarossi) di prossimità progettato per rilevare oggetti in un intervallo molto ravvicinato. Si distingue per la sua velocità di risposta elevata e per la capacità di rilevare la presenza o l'assenza di oggetti a una distanza specifica, generalmente prefissata a circa 5 cm. Ecco una panoramica delle sue caratteristiche principali:
+
+Caratteristiche principali
+Tecnologia: Utilizza la riflessione della luce infrarossa per rilevare la presenza di oggetti. Un LED IR emette luce, e un sensore riceve il segnale riflesso per determinare la presenza di un oggetto.
+Distanza di rilevamento: Ottimizzato per rilevare oggetti a circa 5 cm.
+Uscita digitale: Fornisce un segnale digitale (HIGH/LOW) in base alla rilevazione. Se un oggetto si trova entro il range, l'uscita è attivata (LOW o HIGH, a seconda della configurazione).
+Velocità di risposta: Molto rapida, adatta per applicazioni in cui il tempo di reazione è critico.
+Tensione operativa: Solitamente alimentato a 5V DC.
+Compattezza: Il modulo è molto piccolo e leggero, ideale per applicazioni con vincoli di spazio.
+Applicazioni tipiche
+Robotica: Per evitare ostacoli a distanza ravvicinata o rilevare la presenza di oggetti.
+Automazione: In sistemi di conteggio o di rilevamento rapido.
+Elettronica di consumo: Per attivare funzioni di prossimità in dispositivi come distributori automatici.
+Sicurezza: Come sensore di prossimità in sistemi di protezione.
+Vantaggi
+Affidabilità: Funziona bene con oggetti di vari materiali e colori.
+Bassa complessità: Non richiede circuiti complessi per elaborare il segnale.
+Consumo energetico ridotto: Adatto per dispositivi a bassa potenza.
+Limitazioni
+Range fisso: Il sensore non misura la distanza, ma rileva la presenza entro una soglia preimpostata.
+Sensibilità alla luce ambientale: Può essere influenzato da fonti di luce intensa, anche se ben protetto contro interferenze.
+
+
+Specifiche:
+- Intervallo: 0,5 cm-5 cm
+- Tasso di campionamento: 390Hz
+- Tensione operativa: 2.7V-6.2V
+- Consumo attuale: 5Ma (tipico)
+- Dimensione del modulo: 21,6 x 8,9 x 10,4 mm
+- Peso senza perni di intestazione: 1.3g
